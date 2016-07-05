@@ -242,17 +242,11 @@ public class VNFForwardingGraphRecord implements Serializable{
     public void setNumber_of_pnfs(int number_of_pnfs) {
         this.number_of_pnfs = number_of_pnfs;
     }
-     public boolean isSymmetrical() {
-        return symmetrical;
-    }
 
-    public void setSymmetricity(boolean sym) {
-        this.symmetrical = sym;
-    }
     public int getNumber_of_virtual_links() {
         return number_of_virtual_links;
     }
-    
+
     public void setNumber_of_virtual_links(int number_of_virtual_links) {
         this.number_of_virtual_links = number_of_virtual_links;
     }

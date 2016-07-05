@@ -40,11 +40,6 @@ public class VNFForwardingGraphDescriptor implements Serializable{
 	@Version
 	private int hb_version = 0;
     /**
-     * Specify the symmetricity of the VNFFG
-     */
-    private boolean symmetrical;
-    
-    /**
      * Specify the vendor generating this VNFFG
      * */
     private String vendor;
@@ -94,18 +89,12 @@ public class VNFForwardingGraphDescriptor implements Serializable{
 
     public VNFForwardingGraphDescriptor() {
     }
-   
+
     @PrePersist
     public void ensureId(){
         id=IdGenerator.createUUID();
     }
-     public boolean isSymmetrical() {
-        return symmetrical;
-    }
 
-    public void setSymmetricity(boolean sym) {
-        this.symmetrical = sym;
-    }
     public String getId() {
         return id;
     }

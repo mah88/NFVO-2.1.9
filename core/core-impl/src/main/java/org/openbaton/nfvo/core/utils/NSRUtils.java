@@ -182,7 +182,7 @@ public class NSRUtils {
 
         VNFForwardingGraphRecord vnfforwardingGraphRecord=new VNFForwardingGraphRecord();
                 
-        vnfforwardingGraphRecord.setDescriptor_reference(vnffgDescriptor);
+        vnfforwardingGraphRecord.setDescriptor_reference(vnffgDescriptor.getId());
                        
       //  vnfforwardingGraphRecord.setParent_ns(new NetworkServiceRecord());
         

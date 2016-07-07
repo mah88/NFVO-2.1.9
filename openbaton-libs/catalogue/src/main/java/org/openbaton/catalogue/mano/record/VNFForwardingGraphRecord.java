@@ -38,8 +38,8 @@ public class VNFForwardingGraphRecord implements Serializable{
      * Record of the VNFFGD (vnffgd:id) used to instantiate this VNFFG
      * */
 
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private VNFForwardingGraphDescriptor descriptor_reference;
+   // @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private String descriptor_reference;
     /**
      * Reference to the record (nsr:id) for Network Service instance that this VNFFG instance is part of
      * */
@@ -123,11 +123,11 @@ public class VNFForwardingGraphRecord implements Serializable{
         this.id = id;
     }
 
-    public VNFForwardingGraphDescriptor getDescriptor_reference() {
+    public String getDescriptor_reference() {
         return descriptor_reference;
     }
 
-    public void setDescriptor_reference(VNFForwardingGraphDescriptor descriptor_reference) {
+    public void setDescriptor_reference(String descriptor_reference) {
         this.descriptor_reference = descriptor_reference;
     }
 
